@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
 
 :root {
   --backgrond: #000;
-  --text-color: #FFF;
-  --button: #8257E5;
-  --border: #29292E;
-  --border-menu-mobile: #A8A8B3;
-  --text-color-menu-mobile: #E1E1E6;
+  --text-color: #fff;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
 }
 
 * {
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
   background-color: var(--backgrond);
-  color: var(--text-color); 
-  font-family: 'Manrope', sans-serif;
+  color: var(--text-color);
+  font-family: "Manrope", sans-serif;
 }
 
 body {
@@ -25,14 +25,14 @@ body {
 }
 
 header {
-  display: flex; 
+  display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.logo { 
+.logo {
   width: 100px;
   height: 100px;
   background-image: url(./assets/logo-desktop.svg);
@@ -44,7 +44,7 @@ header {
   .logo {
     background-image: url(./assets/logo-mobile.svg), url(./assets/);
   }
-} 
+}
 
 .menu-container {
   display: flex;
@@ -53,12 +53,64 @@ header {
   justify-content: space-between;
 }
 
-.menu-items{
+.menu-items {
   list-style: none;
 }
 
-.btn-nav{
-  border: 1px solid #8257E5; 
+.btn-nav {
+  border: 1px solid #8257e5;
   border-radius: 5px;
-  padding: 11px 38px; 
+  padding: 11px 38px;
+}
+
+main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+  justify-content: space-between;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-title {
+  font-size: 5rem;
+}
+.shadow-title {
+  font-size: 5rem;
+  color: var(--backgrond);
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+.coffee-image {
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  height: 506px;
+}
+.blur-img-2 {
+  position: absolute;
+  width: 321px;
+  height: 321px;
+  bottom: 0px;
+  left: -140px;
+  z-index: 1;
+  background-color: #996dff;
+  filter: blur(200px);
+}
+.blur-img-1 {
+  position: absolute;
+  width: 321px;
+  height: 321px;
+  top: 0px;
+  rightj: -140px;
+  z-index: 1;
+  background-color: #996dff;
+  filter: blur(200px);
 }
